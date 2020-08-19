@@ -1,0 +1,314 @@
+/* FONTS */
+@font-face {
+  font-family: 'League Spartan', sans-serif;
+  src: url('../fonts/leaguespartan-bold.eot');
+  src: url('../fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguespartan-bold.woff2') format('woff2'), url('../fonts/leaguespartan-bold.woff') format('woff'), url('../fonts/leaguespartan-bold.ttf') format('truetype'), url('../fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HKGrotesk', sans-serif;
+  src: url('../fonts/HKGrotesk-Light.eot');
+  src: url('../fonts/HKGrotesk-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/HKGrotesk-Light.woff2') format('woff2'), url('../fonts/HKGrotesk-Light.woff') format('woff'), url('../fonts/HKGrotesk-Light.ttf') format('truetype'), url('../fonts/HKGrotesk-Light.svg') format('svg');
+  /*font-weight: lighter;*/
+  font-weight: normal;
+  font-style: normal;
+}
+/* COLORS */
+/* BASE styles */
+@import-once "normalize.css";
+:root {
+  font-size: 16px;
+}
+body {
+  background-color: #272f45;
+  color: #9aa5a9;
+  max-width: 85.2941%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+.btnBuy {
+  border: 3px solid #eec9a2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 800;
+  padding: 1rem 2.25rem;
+  text-decoration: none;
+}
+.btnBuy:hover {
+  background-color: #dcd555;
+}
+.btnBuy_thin {
+  font-family: 'HKGrotesk', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+/* HEADER section */
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.875rem;
+  margin-bottom: 1.5rem;
+}
+.searchBox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15.5172%;
+}
+.searchBox input {
+  background-color: transparent;
+  border: none;
+  color: #9aa5a9;
+  font-family: 'HKGrotesk', sans-serif;
+  font-size: 1.5rem;
+  margin-left: 2%;
+  width: 84%;
+}
+.searchBox__underline {
+  border-bottom: 3px solid #63757e;
+  padding-bottom: 0.75rem;
+  width: 100%;
+}
+/* PRODUCTS section */
+.products {
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.7285%;
+}
+/* product-block*/
+.product {
+  background-color: #cacaf0;
+  -webkit-background-size: cover;
+  background-position: top center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  margin-top: 2.778vw;
+  margin-left: 1.6667%;
+  margin-right: 1.6667%;
+  padding: 0 2.5%;
+}
+.product__label {
+  position: absolute;
+  right: 2.3125rem;
+  top: 2.3125rem;
+}
+.product_lg {
+  min-height: 50.7352vw;
+  padding-bottom: 7.5rem;
+  padding-left: 5%;
+  padding-top: 6.5625rem;
+  position: relative;
+  width: 100%;
+}
+.product_md {
+  min-height: 38.23529vw;
+  padding-bottom: 16.5441vw;
+  width: 46.6667%;
+}
+.product_sm {
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 2.9411vw;
+  padding-top: 4.4117vw;
+  min-height: 32.3529vw;
+  width: 29.9999%;
+}
+.product__description h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.product__description p {
+  font-family: 'HKGrotesk', sans-serif;
+}
+.product__description_lg {
+  width: 44%;
+}
+.product__description_lg h2 {
+  font-size: 5rem;
+  margin-top: 0;
+}
+.product__description_lg p {
+  font-size: 2rem;
+}
+.product__description_md h2 {
+  font-size: 3rem;
+}
+.product__description_md p {
+  font-size: 1.5rem;
+}
+.product__description_sm {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  text-align: center;
+}
+.product__description_sm h2 {
+  margin: 0.5rem 0 1.8rem;
+  font-size: 2.25em;
+}
+.product__description_sm P {
+  margin: 0.25rem 0;
+}
+.product_elementsRight {
+  text-align: right;
+  align-items: flex-end;
+}
+.product_elementsBottom {
+  justify-content: flex-end;
+}
+.product:nth-child(1) {
+  background-image: url('../img/ginaProduct.jpg');
+}
+.product:nth-child(2) {
+  background-image: url('../img/beoplay.jpg');
+}
+.product:nth-child(3) {
+  background-image: url('../img/leicaMPproduct.jpg');
+}
+.product:nth-child(4) {
+  background-image: url('../img/molekule.jpg');
+}
+.product:nth-child(5) {
+  background-image: url('../img/p9signature.jpg');
+}
+.product:nth-child(6) {
+  background-image: url('../img/dr-ii.jpg');
+}
+/* SUBSCRIBE section */
+.subscribe {
+  font-family: 'HKGrotesk', sans-serif;
+  font-weight: 300;
+  margin: 11vw auto 0;
+  text-align: center;
+  max-width: 69%;
+}
+.subscribe__title {
+  font-size: 2rem;
+}
+.subscribe__text {
+  font-size: 1.125rem;
+}
+.subscribe__form {
+  font-family: 'HKGrotesk', sans-serif;
+  margin: 3.6764vw auto 5.5147vw;
+  width: 45%;
+}
+.subscribe__email {
+  color: #ffffff;
+  background-color: transparent;
+  border: 3px solid #63757e;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 2.25rem;
+  text-align: center;
+  width: 100%;
+}
+.subscribe__submit {
+  background-color: transparent;
+  border: 3px solid #82c9d8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2.25rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.subscribe__submit:hover {
+  background-color: #63757e;
+}
+/* FOOTER section */
+.footer {
+  color: #9aa5a9;
+  font-family: 'HKGrotesk', sans-serif;
+  text-align: center;
+}
+.footer__copyright {
+  font-size: 1.125rem;
+  margin-top: 1.875rem;
+}
+.footerMenu {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.footerMenu__link {
+  color: #9aa5a9;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.footerMenu__link:not(:first-child):before {
+  content: '';
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #9aa5a9;
+  height: 0.25em;
+  margin: 0 0.625em;
+  vertical-align: middle;
+  width: 0.25em;
+}
+@media screen and (max-width: 1220px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 930px) {
+  :root {
+    font-size: 10px;
+  }
+  .searchBox {
+    width: 40%;
+  }
+  .product_sm {
+    min-height: 38.23529vw;
+    padding-bottom: 16.5441vw;
+    width: 46.6667%;
+  }
+}
+@media screen and (max-width: 570px) {
+  body {
+    min-width: 95%;
+  }
+  .header__logo object {
+    max-height: 5rem;
+  }
+  .product {
+    width: 100%;
+  }
+  .product__description_lg {
+    width: 85%;
+  }
+  .product__description_sm {
+    font-size: 1.5rem;
+  }
+  .subscribe {
+    max-width: 80%;
+  }
+  .subscribe__form {
+    width: 80%;
+  }
+}

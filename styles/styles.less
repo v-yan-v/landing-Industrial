@@ -1,0 +1,380 @@
+/* FONTS */
+@font-face {
+  font-family: 'League Spartan', sans-serif;
+  src: url('../fonts/leaguespartan-bold.eot');
+  src: url('../fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/leaguespartan-bold.woff2') format('woff2'),
+  url('../fonts/leaguespartan-bold.woff') format('woff'),
+  url('../fonts/leaguespartan-bold.ttf') format('truetype'),
+  url('../fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKGrotesk', sans-serif;
+  src: url('../fonts/HKGrotesk-Light.eot');
+  src: url('../fonts/HKGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HKGrotesk-Light.woff2') format('woff2'),
+  url('../fonts/HKGrotesk-Light.woff') format('woff'),
+  url('../fonts/HKGrotesk-Light.ttf') format('truetype'),
+  url('../fonts/HKGrotesk-Light.svg') format('svg');
+  /*font-weight: lighter;*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* COLORS */
+@color_btn_border: #eec9a2;
+@color_dark_border: #63757e;
+@color_dark_blue: #272f45;
+@color_default_text: #9aa5a9;
+@color_filler: #cacaf0;
+@color_light_border: #82c9d8;
+@color_white: #ffffff;
+@color_yellow: #eec9a2;
+
+/* BASE styles */
+@import-once "normalize.css";
+:root{
+  font-size: 16px;
+}
+body{
+  background-color: @color_dark_blue;
+  color: @color_default_text;
+  max-width: 85.2941%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.btnBuy{
+  border: 3px solid @color_btn_border;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: @color_white;
+  font-family:'League Spartan', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 800;
+  padding: 1rem 2.25rem;
+  text-decoration: none;
+
+  &:hover{
+    background-color: #dcd555;
+  }
+  &_thin{
+    font-family:'HKGrotesk', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+}
+
+/* HEADER section */
+.header{
+  //align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.875rem;
+  margin-bottom: 1.5rem;
+}
+.searchBox{
+  display: flex;
+  flex-wrap: wrap;
+  width: 15.5172%;
+
+  input{
+    background-color: transparent;
+    border: none;
+    color: @color_default_text;
+    font-family:'HKGrotesk', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 2%;
+    width: 84%;
+  }
+  &__underline{
+    //height: px;
+    //background-color: @color_dark_border;
+    border-bottom: 3px solid @color_dark_border;
+    padding-bottom: 0.75rem;
+    width: 100%;
+  }
+}
+
+/* PRODUCTS section */
+.products{
+  color: @color_white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.7285%;
+}
+/* product-block*/
+.product{
+  background-color: @color_filler;
+  -webkit-background-size: cover;
+  background-position: top center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 200px;
+  margin-top: 2.778vw;
+  margin-left: 1.6667%;
+  margin-right: 1.6667%;
+  padding: 0 2.5%;
+
+  &__label{
+    //background-image: url('../img/kickstarterLogo.svg');
+    position: absolute;
+    right: 2.3125rem;
+    top: 2.3125rem;
+  }
+
+  &_lg{
+    min-height: 50.7352vw;
+    padding-bottom: 7.5rem;
+    padding-left: 5%;
+    padding-top: 6.5625rem;
+    position: relative;
+    width: 100%;
+  }
+  &_md{
+    min-height: 38.23529vw;
+    padding-bottom: 16.5441vw;
+    //padding-top: 4.4117vw;
+    width: 46.6667%;
+  }
+  &_sm{
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 2.9411vw;
+    padding-top: 4.4117vw;
+    min-height: 32.3529vw;
+    width: 29.9999%;
+  }
+
+  &__description{
+    h2{
+      font-family:'League Spartan', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    p{
+      font-family:'HKGrotesk', sans-serif;
+    }
+    &_lg {
+      width: 44%;
+      h2{
+        font-size: 5rem;
+        margin-top: 0;
+        //margin-bottom: 0.5596em;
+      }
+      p{
+        font-size: 2rem;
+      }
+    }
+    &_md{
+      h2{
+        font-size: 3rem;
+        //margin-top: 1.2em;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+    &_sm{
+      align-items: center;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      text-align: center;
+      h2{
+        margin: 0.5rem 0 1.8rem;
+        font-size: 2.25em;
+      }
+      P{
+        margin: 0.25rem 0;
+      }
+    }
+  }
+  &_elementsRight{
+    text-align: right;
+    align-items: flex-end;
+  }
+  &_elementsBottom{
+    justify-content: flex-end;
+  }
+
+  &:nth-child(1){
+    background-image: url('../img/ginaProduct.jpg');
+  }
+  &:nth-child(2){
+    background-image: url('../img/beoplay.jpg');
+  }
+  &:nth-child(3){
+    background-image: url('../img/leicaMPproduct.jpg');
+  }
+  &:nth-child(4){
+    background-image: url('../img/molekule.jpg');
+  }
+  &:nth-child(5){
+    background-image: url('../img/p9signature.jpg');
+  }
+  &:nth-child(6){
+     background-image: url('../img/dr-ii.jpg');
+   }
+}
+
+/* SUBSCRIBE section */
+.subscribe{
+  font-family:'HKGrotesk', sans-serif;
+  font-weight: 300;
+  margin: 11vw auto 0;
+  text-align: center;
+  max-width: 69%;
+
+  &__title{
+    font-size: 2rem;
+  }
+  &__text{
+    font-size: 1.125rem;
+  }
+
+  &__form{
+    font-family: 'HKGrotesk', sans-serif;
+    margin: 3.6764vw auto 5.5147vw;
+    width: 45%;
+  }
+  &__email{
+    color: #ffffff;
+
+    background-color: transparent;
+    border: 3px solid @color_dark_border;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 2.25rem;
+    text-align: center;
+    width: 100%;
+  }
+  &__submit{
+    background-color: transparent;
+    border: 3px solid @color_light_border;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-family:'League Spartan', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2.25rem;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 1.5rem;
+    &:hover{
+      background-color: @color_dark_border;
+      //-webkit-transform: 1s;
+      //-moz-transform: 1s;
+      //-ms-transform: 1s;
+      //-o-transform: 1s;
+      //transform: 1s;
+    }
+  }
+}
+
+/* FOOTER section */
+.footer{
+  color: @color_default_text;
+  font-family:'HKGrotesk', sans-serif;
+  text-align: center;
+  &__copyright{
+    font-size: 1.125rem;
+    margin-top: 1.875rem;
+  }
+}
+.footerMenu{
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  &__link{
+    color: @color_default_text;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &:not(:first-child):before{
+      content: '';
+      border-radius: 50%;
+      display: inline-block;
+      background-color: @color_default_text;
+      height: 0.25em;
+      margin: 0 0.625em;
+      vertical-align: middle;
+      width: 0.25em;
+      }
+    }
+  }
+
+  //&__bullet{
+  //  border-radius: 50%;
+  //  display: inline-block;
+  //  background-color: @color_default_text;
+  //  height: 0.25em;
+  //  margin: 0 0.625em;
+  //  vertical-align: middle;
+  //  width: 0.25em;
+  //}
+
+@media screen and (max-width: 1220px){
+  :root{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 930px){
+  :root{
+    font-size: 10px;
+  }
+  .searchBox{
+    width: 40%;
+  }
+  .product_sm{
+    min-height: 38.23529vw;
+    padding-bottom: 16.5441vw;
+    //padding-top: 4.4117vw;
+    width: 46.6667%;
+  }
+}
+
+@media screen and (max-width: 570px){
+  body{
+    min-width: 95%;
+  }
+  .header__logo object{
+    max-height: 5rem;
+  }
+  .product{
+    width: 100%;
+  }
+  .product__description_lg{
+    width: 85%;
+  }
+  .product__description_sm{
+    font-size: 1.5rem;
+  }
+  .subscribe{
+    max-width: 80%;
+    &__form{
+      width: 80%;
+    }
+  }
+}
